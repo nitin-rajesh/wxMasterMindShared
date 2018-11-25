@@ -1,1 +1,1 @@
-wxMasterMindShared
+MasterMindWX

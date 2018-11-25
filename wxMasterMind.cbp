@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxMasterMind" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/wxMasterMind" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/wxMasterMind" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="`wx-config --cflags`" />
+			<Add option="-Winvalid-pch" />
+			<Add option="-include wx_pch.h" />
+			<Add option="-DWX_PRECOMP" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="ColourComplex.cpp" />
+		<Unit filename="ColourComplex.h" />
+		<Unit filename="EliminationLooper.cpp" />
+		<Unit filename="EliminationLooper.h" />
+		<Unit filename="FindNextPositionLooper.ads" />
+		<Unit filename="FindNextPositionLooper.cpp" />
+		<Unit filename="FindNextPositionLooper.h" />
+		<Unit filename="GameConfig.h" />
+		<Unit filename="GameRecord.cpp" />
+		<Unit filename="GameRecord.h" />
+		<Unit filename="GameScreen.cpp" />
+		<Unit filename="GameScreen.h" />
+		<Unit filename="GameSetup.cpp" />
+		<Unit filename="GameSetup.h" />
+		<Unit filename="Highscore.cpp" />
+		<Unit filename="Highscore.h" />
+		<Unit filename="InitLooper.cpp" />
+		<Unit filename="InitLooper.h" />
+		<Unit filename="Looper.ads" />
+		<Unit filename="Looper.cpp" />
+		<Unit filename="Looper.h" />
+		<Unit filename="Looper.t.hpp" />
+		<Unit filename="NNestedForLoop.cpp" />
+		<Unit filename="NNestedForLoop.h" />
+		<Unit filename="NNestedForLoop.t.hpp" />
+		<Unit filename="PlayArea1.cpp" />
+		<Unit filename="PlayArea1.h" />
+		<Unit filename="PlayTime.cpp" />
+		<Unit filename="PlayTime.h" />
+		<Unit filename="RulesOfGames.cpp" />
+		<Unit filename="RulesOfGames.h" />
+		<Unit filename="Solver.cpp" />
+		<Unit filename="Solver.h" />
+		<Unit filename="Tensor.cpp" />
+		<Unit filename="Tensor.h" />
+		<Unit filename="Tensor.t.hpp" />
+		<Unit filename="wxMasterMindApp.cpp" />
+		<Unit filename="wxMasterMindApp.h" />
+		<Unit filename="wxMasterMindMain.cpp" />
+		<Unit filename="wxMasterMindMain.h" />
+		<Unit filename="wx_pch.h">
+			<Option compile="1" />
+			<Option weight="0" />
+		</Unit>
+		<Unit filename="wxsmith/PlayArea1.wxs" />
+		<Unit filename="wxsmith/PlayTime.wxs" />
+		<Unit filename="wxsmith/RulesOfGames.wxs" />
+		<Unit filename="wxsmith/wxMasterMindframe.wxs" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="wxMasterMindApp.cpp" main="wxMasterMindFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/wxMasterMindframe.wxs" src="wxMasterMindMain.cpp" hdr="wxMasterMindMain.h" fwddecl="0" i18n="1" name="wxMasterMindFrame" language="CPP" />
+					<wxFrame wxs="wxsmith/PlayTime.wxs" src="PlayTime.cpp" hdr="PlayTime.h" fwddecl="0" i18n="1" name="PlayTime" language="CPP" />
+					<wxDialog wxs="wxsmith/PlayArea1.wxs" src="PlayArea1.cpp" hdr="PlayArea1.h" fwddecl="0" i18n="1" name="PlayArea1" language="CPP" />
+					<wxDialog wxs="wxsmith/RulesOfGames.wxs" src="RulesOfGames.cpp" hdr="RulesOfGames.h" fwddecl="0" i18n="1" name="RulesOfGames" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

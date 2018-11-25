@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="GameSetup">
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+						<object class="sizeritem">
+							<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+								<label>Game&#x0A;Setup</label>
+								<font>
+									<size>18</size>
+									<style>normal</style>
+									<weight>normal</weight>
+									<underlined>0</underlined>
+									<family>default</family>
+									<face>Sawasdee</face>
+								</font>
+							</object>
+							<flag>wxALL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="BoxSizer4" member="no">
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+										<label>Number of&#x0A;Columns</label>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxChoice" name="ID_CHOICE1" variable="ColumnChoice" member="yes">
+										<content>
+											<item>4</item>
+											<item>5</item>
+											<item>6</item>
+											<item>7</item>
+											<item>8</item>
+										</content>
+										<selection>0</selection>
+										<size>80,31</size>
+										<handler function="numberOfColumns" entry="EVT_CHOICE" />
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxCheckBox" name="ID_CHECKBOX1" variable="RepChoice" member="yes">
+										<label>Repition</label>
+										<handler function="activateRepeat" entry="EVT_CHECKBOX" />
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+						<object class="sizeritem">
+							<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+										<label>Number of&#x0A;Digits</label>
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxChoice" name="ID_CHOICE2" variable="DigitChoice" member="yes">
+										<content>
+											<item>8</item>
+											<item>10</item>
+											<item>12</item>
+											<item>14</item>
+											<item>16</item>
+										</content>
+										<selection>0</selection>
+										<size>80,31</size>
+										<handler function="numberOfDigits" entry="EVT_CHOICE" />
+									</object>
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+										<label>Save</label>
+										<size>46,34</size>
+										<handler function="pseudoSave" entry="EVT_BUTTON" />
+									</object>
+									<flag>wxALL|wxALIGN_RIGHT</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>

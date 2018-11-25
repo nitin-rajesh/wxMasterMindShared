@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="RulesOfGames">
+		<pos_arg>1</pos_arg>
+		<size_arg>1</size_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<object class="sizeritem">
+				<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+					<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+						<orient>wxVERTICAL</orient>
+						<object class="sizeritem">
+							<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+								<label>Welcome to Mastermind Version 2 !&#x0A;&#x0A;HOW TO PLAY&#x0A;&#x0A;The computer picks a sequence of four numbers. The numbers range from 1 to 8. Your objective is to guess that numbers, with all of its digits in the correct order.&#x0A;&#x0A;After filling a line with your guesses, the computer responses with the result of your guess.&#x0A;&#x0A;Red counts the numbers in your guess that are of the correct value and in correct position in the code sequence.&#x0A;&#x0A;White counts the numbers in your guess with the correct value but NOT in the correct position in the code sequence.&#x0A;&#x0A;You win the game when you manage to guess all the colors in the code sequence and when they all in the right position before running out of tries.&#x0A;&#x0A;The customization menu lets you select the number of digits, the number of columns and enable repititions in digits for the answer.&#x0A;Add more digits and columns for a more challenging gameplay.&#x0A;&#x0A;</label>
+							</object>
+							<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+							<border>5</border>
+							<option>1</option>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>
